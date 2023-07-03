@@ -59,12 +59,13 @@ const Home = () => {
             buttonText="Get Started"
           />
         </Carousel>
-        <div className="greeting">
+        <div className="greeting container" id="welcome">
           <h1 className="greeting-text">Welcome</h1>
           <p className="greeting-text-par">
             Welcome to the Royal Bhyamsala,We hope that you will appreciate our
-            services and opportunities. we offer our Lorem ipsum dolor sit amet
-            consectetur.Here are some of these
+            services and opportunities.<br></br>we offer our Lorem ipsum dolor sit amet
+            consectetur.Here are some of these:
+            <hr></hr>
           </p>
         </div>
         {/* <div className="resources">
