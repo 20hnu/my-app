@@ -7,7 +7,7 @@ const ImageSlide = ({ src, alt,text, par_text, buttonText }) => {
       <div className="text-overlay">
         <h1 className="main-text">{text}</h1>
         <p className="main-text-par">{par_text}</p>
-        <button className="btn">{buttonText}</button>
+        <button className="btn" id="myButton">{buttonText}</button>
       </div>
     </div>
   );

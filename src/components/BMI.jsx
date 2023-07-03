@@ -6,8 +6,17 @@ const BMI = () => {
         event.preventDefault();
         const height = document.getElementById("height").value;
         const weight = document.getElementById("weight").value;
-        const bmi = weight / (height / 100) ** 2;
-        alert(bmi.toFixed(2));
+        const bmi = (weight / (height / 100) ** 2).toFixed(2);
+
+        if (bmi < 18.5){
+              alert('Your BMI index is less than 18.5 so you are underweight.');
+        }else if (bmi > 18.5 && bmi <24.9){
+            alert('Your BMI index is less than 24.9  and greater than 18.5 so you have normal weight.');
+        }else if (bmi > 25 && bmi < 29.9){
+            alert('Your BMI index is less than 29.9  and greater than 25 so you have overweight.');
+        }else {
+            alert('Your BMI index is greater thn 30 so you have got obesity.')
+        }
     };
     return (
         <div className="bmi_container">
@@ -34,21 +43,11 @@ const BMI = () => {
                         name="weight"
                     />
                 </div>
-                <button type="submit" className="btn btn-danger">
-                    Calculate
+                <button type="submit" className="btn btn-danger bmi_btn">
+                    <p className="btn_text">Calculate</p>
                 </button>
             </form>
             </div>
-            {/* <div className="index">
-                <ul className="index_items">
-                    <li className="index_item">Underweight: BMI less than 18.5</li>
-                    <li className="index_item">Normal weight: BMI between 18.5 and 24.9</li>
-                    <li className="index_item">Overweight: BMI between 25 and 29.9</li>
-                    <li className="index_item">Obesity (Class 1): BMI between 30 and 34.9</li>
-                    <li className="index_item">Obesity (Class 2): BMI between 35 and 39.9</li>
-                    <li className="index_item">Obesity (Class 3): BMI 40 or higher (also known as morbid obesity)</li>
-                </ul>
-            </div> */}
         </div>
     );
 };
