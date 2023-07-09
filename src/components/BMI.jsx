@@ -1,7 +1,15 @@
 import React from "react";
 import "./BMI.css";
+import backgroundImage from "../images/bmi.jpg"
 
 const BMI = () => {
+    const style ={
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100%",
+        height: "100vh",
+    };
     const calculate_bmi = (event) => {
         event.preventDefault();
         const height = document.getElementById("height").value;
@@ -19,7 +27,7 @@ const BMI = () => {
         }
     };
     return (
-        <div className="bmi_container">
+        <div className="bmi_container" style={style}>
             <div className="text_overlay">
             <form id="bmiform" onSubmit={calculate_bmi} >
                 <h1 className="heading">

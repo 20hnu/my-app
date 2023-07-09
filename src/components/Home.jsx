@@ -9,6 +9,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ImageSlide from "./ImageSlide";
 
 const Home = () => {
+  const style ={
+    textAlign: "center"
+  };
   return (
     <div className="home-container">
       <div className="home-content">
@@ -103,12 +106,12 @@ const Home = () => {
                   fill="var(--bs-secondary-color)"
                 ></rect>
               </svg>
-              <h2 className="fw-normal">Heading</h2>
-              <p>
+              <h2 className="fw-normal" style={style}>Heading</h2>
+              <p style={style}>
                 Some representative placeholder content for the three columns of
                 text below the carousel. This is the first column.
               </p>
-              <p>
+              <p style={style}>
                 <a className="btn btn-secondary" href="#">
                   View details »
                 </a>
@@ -132,12 +135,12 @@ const Home = () => {
                   fill="var(--bs-secondary-color)"
                 ></rect>
               </svg>
-              <h2 className="fw-normal">Heading</h2>
-              <p>
+              <h2 className="fw-normal" style={style}>Heading</h2>
+              <p style={style}>
                 Another exciting bit of representative placeholder content. This
                 time, we've moved on to the second column.
               </p>
-              <p>
+              <p style={style}>
                 <a className="btn btn-secondary" href="#">
                   View details »
                 </a>
@@ -161,12 +164,12 @@ const Home = () => {
                   fill="var(--bs-secondary-color)"
                 ></rect>
               </svg>
-              <h2 className="fw-normal">Heading</h2>
-              <p>
+              <h2 className="fw-normal" style={style}>Heading</h2>
+              <p style={style}>
                 And lastly this, the third column of representative placeholder
                 content.
               </p>
-              <p>
+              <p style={style}>
                 <a className="btn btn-secondary" href="#">
                   View details »
                 </a>

@@ -36,11 +36,13 @@
   }
   
   .navbar__link {
-    color: #fff;
+    color: red;
     text-decoration: none;
   }
   .navbar__link:hover {
-    color: #777;
+    color: #a8f523;
   }
-  
+  .activate{
+    color:aliceblue;
+  }
   

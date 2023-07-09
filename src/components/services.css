@@ -1,8 +1,7 @@
 .services{
     margin-top: 60px;
     padding:20px;
-    background-color: rgb(137, 193, 239);
-
+    color:white;
 }
 
 .service_text{
@@ -15,4 +14,7 @@
 }
 .text_long{
     text-align: center;
+}
+.active{
+    color:blanchedalmond;
 }

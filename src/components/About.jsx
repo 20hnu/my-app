@@ -35,16 +35,17 @@ const About = () => {
     },
   ];
   return (
+  <div style={{backgroundColor:"black"}}>
     <div className="container about">
       <h1 className="about_text">
         <u>Meet Our Service Providers:</u>
       </h1>
-      <div className="row mb-2">
+      <div className="row mb-2" style={{color:"white"}}>
       {members.map(({id,member,role,image,description}) => (
         <div className="col-md-6" key={id}>
           <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div className="col p-4 d-flex flex-column position-static">
-              <strong className="d-inline-block mb-2 text-primary-emphasis">
+              <strong className="d-inline-block mb-2 text-danger-emphasis">
               {role}
               </strong>
               <h3 className="mb-0">{member}</h3>
@@ -58,7 +59,7 @@ const About = () => {
           </div>
         </div>
       ))};
-       
+       </div>
         </div>
       </div>
   );
